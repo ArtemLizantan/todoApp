@@ -33,7 +33,8 @@ const TodoList = () => {
   }, [todoList]);
 
   useEffect(() => {
-    const localTodoList = JSON.parse(localStorage.getItem("todolist"));
+    const localTodoListString = localStorage.getItem("todolist");
+    const localTodoList = localTodoListString ? JSON.parse(localTodoListString) : [];
     if (localTodoList) {
       dispatch(setTodoList(localTodoList));
     }
