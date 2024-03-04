@@ -1,0 +1,31 @@
+.todo {
+  &__wrapper-btn {
+    position: relative;
+    span {
+      color: white;
+      position: absolute;
+      top: -15px;
+      right: -10px;
+      font-weight: 600;
+      background-color: #4b4ba7;
+      border-radius: 50%;
+      padding: 5px 10px;
+    }
+  }
+  &__btn {
+    padding: 10px 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    word-break: break-all;
+    @media (min-width: 991px) {
+      &:hover{
+        background-color: purple;
+      }
+    }
+  }
+}

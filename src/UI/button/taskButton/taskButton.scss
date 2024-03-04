@@ -1,0 +1,15 @@
+.task-btn {
+  padding: 10px 20px;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  @media (min-width: 991px) {
+    &:hover {
+      background-color: purple;
+    }
+  }
+}
